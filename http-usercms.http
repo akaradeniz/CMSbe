@@ -1,0 +1,102 @@
+POST http://localhost:8080/api/usercms
+Content-Type: application/json
+
+{
+  "firstname": "AdileNew1",
+  "lastname": "Karadeni1",
+  "email": "Adile1@gmail.coms",
+  "username": "AdileNew1",
+  "password": "12345"
+}
+
+###
+GET http://localhost:8080/api/usercms?username=Veena1&password=122561
+
+###
+GET http://localhost:8080/api/usercms/ListOfUsers
+
+
+###
+DELETE http://localhost:8080/api/usercms?id=22
+
+
+###
+PUT http://localhost:8080/api/usercms
+Content-Type: application/json
+
+{
+  "id": 14,
+  "firstname": "Rabia",
+  "lastname": "Karadeniz",
+  "email": "rabiaa@gmail.coms",
+  "username": "Rabi",
+  "password": "1234"
+}
+
+
+###
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+Authorization: 1
+
+{
+
+  "title": "New ",
+  "body": "post",
+  "commend": []
+}
+###
+GET http://localhost:8080/api/posts?id=18
+
+
+###
+GET http://localhost:8080/api/posts/posts/all
+
+###
+PUT http://localhost:8080/api/posts
+Content-Type: application/json
+Authorization: 1
+
+{
+  "id": 17,
+"title": "New Dresses",
+  "body": "Computer Basics",
+"commend": []
+}
+
+###
+DELETE http://localhost:8080/api/posts?id=17
+
+
+
+
+###
+POST http://localhost:8080/api/commend?postId=3
+Content-Type: application/json
+Authorization: 1
+
+{
+
+  "body": "New Cars are good"
+}
+
+###
+GET http://localhost:8080/api/commend?id=21
+
+
+###
+GET http://localhost:8080/api/commend/commend/all
+
+###
+PUT http://localhost:8080/api/commend
+Content-Type: application/json
+
+{
+  "id": 21,
+  "author": "Seller",
+  "body": "New Dresses are here",
+  "index": 0
+}
+
+###
+DELETE http://localhost:8080/api/commend?id=11
